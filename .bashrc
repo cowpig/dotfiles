@@ -10,6 +10,7 @@
 
 #PATH stuff
 PATH=$PATH:/home/max/bin
+PATH=$PATH:~/SublimeText2
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -117,5 +118,3 @@ fi
 LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
 
-PATH=$PATH:~/Downloads/SublimeText2
-PATH=$PATH:~/Downloads/sympy/bin
