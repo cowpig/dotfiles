@@ -1,0 +1,15 @@
+[user]
+	name = Max
+	email = max@recoset.com
+[core]
+	editor = vim
+[color]
+    ui = auto
+[alias]
+	a = add	
+	d = diff
+    st = status
+    submodules-to-master = submodule foreach "git fetch && git checkout master && git pull origin master"
+    cm = commit -m
+	log = log --stat
+	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
