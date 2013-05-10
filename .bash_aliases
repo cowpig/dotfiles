@@ -1,5 +1,4 @@
-alias verk="cd ~/verk/btr-email"
-alias mnt="cd /mnt/shared/btr-data"
+alias verk="cd ~/verk/"
 alias sub="sublime_text"
 alias fsdev2="sshfs max@dev2.recoset.com:/home/max/ ~/dev2mount"
 alias fsag2="sshfs max@ag2.recoset.com:/home/max/ ~/ag2mount"
