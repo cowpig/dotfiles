@@ -37,3 +37,11 @@ if [ -f .bash_custom ] ; then
     source .bash_custom
 fi
 
+# Add local directory for libraries, etc
+mkdir -p $HOME/local/bin
+PATH="$HOME/local/bin:$PATH"
+ 
+mkdir -p $HOME/local/lib
+export LD_LIBRARY_PATH="$HOME/local/lib:$LD_LIBRARY_PATH"
+ 
+export PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig/:$HOME/local/lib/pkg-config/"
