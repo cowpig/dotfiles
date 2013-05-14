@@ -13,4 +13,5 @@ alias ssc="ssh -XA ec2-50-17-0-100.compute-1.amazonaws.com"
 alias sscfs="sshfs max@ec2-50-17-0-100.compute-1.amazonaws.com:/home/max ~/sscmount"
 alias train_ss="nice makerun experiment_runner sitescout_test campaigns/configFUTURE.json -kj16 evalRoc probabilizers statsTableAll featInfluence dataAnalysis vxsim"
 alias ssec2="ssh -XA max@ec2-184-72-147-211.compute-1.amazonaws.com"
-alias ssec2fs="sshfs max@ec2-184-72-147-211.compute-1.amazonaws.com:/home/max ~/ssec2mount"
+alias ssec2fs="sshfs max@ec2-184-72-147-211.compute-1.amazonaws.com:/home/max ~/ssec2mount
+"
