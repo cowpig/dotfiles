@@ -15,3 +15,5 @@ alias train_ss="nice makerun experiment_runner sitescout_test campaigns/configFU
 alias ssec2="ssh -XA max@ec2-184-72-147-211.compute-1.amazonaws.com"
 alias ssec2fs="sshfs max@ec2-184-72-147-211.compute-1.amazonaws.com:/home/max ~/ssec2mount
 "
+alias vis_train="python ../../tools/feature_graph.py vm_dataset_click.txt.gz vm_dataset_click.txt.gz_featName.gz --interactive"
+alias vis_test="python ../../tools/feature_graph.py vm_dataset_test_click.txt.gz vm_dataset_test_click.txt.gz_featName.gz --interactive"
