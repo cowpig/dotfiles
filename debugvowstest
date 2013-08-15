@@ -1,0 +1,1 @@
+NODE_PATH=build/x86_64/bin LD_PRELOAD=build/x86_64/bin/libexception_hook.so gdb --args node ./node_modules/vows/bin/vows build/x86_64/tests/request_multiplexer_js_test.js
