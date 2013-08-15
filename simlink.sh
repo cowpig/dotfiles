@@ -8,4 +8,5 @@ ln -s ~/dotfiles/.bashrc
 ln -s ~/dotfiles/.bash_aliases
 ln -s ~/dotfiles/.tmux.conf
 ln -s ~/dotfiles/.profile
+ln -s ~/dotfiles/.gdbinit
 sudo cp sublime.desktop /usr/share/applications/
