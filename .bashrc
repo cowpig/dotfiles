@@ -9,6 +9,7 @@
 [ -z "$PS1" ] && return
 
 #PATH stuff
+PATH=/home/max/anaconda/bin:$PATH
 PATH=$PATH:/home/max/bin
 PATH=$PATH:~/SublimeText2
 
