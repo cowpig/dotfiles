@@ -119,3 +119,6 @@ fi
 LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
 
+
+# added by Anaconda 1.8.0 installer
+export PATH="/home/max/anaconda/bin:$PATH"
