@@ -16,10 +16,9 @@ alias ssec2="ssh -XA training.sitescout.datacratic.com"
 alias ssec2fs="sshfs training.sitescout.datacratic.com:/home/max ~/ssec2mount"
 alias vis_train="python ../../tools/feature_graph.py vm_dataset_click.txt.gz vm_dataset_click.txt.gz_featName.gz --interactive"
 alias vis_test="python ../../tools/feature_graph.py vm_dataset_test_click.txt.gz vm_dataset_test_click.txt.gz_featName.gz --interactive"
-alias sscloud="ssh -XA training.bloom.datacratic.com"
-alias cloudfs="sshfs training.bloom.datacratic.com:/home/max ~/cloudmount"
-
+alias sscloud="ssh -XA indexer.bloom.datacratic.com"
+alias cloudfs="sshfs indexer.bloom.datacratic.com:/home/max ~/cloudmount"
 alias micfs="sshfs machink7@machineintelligencecup.com: temp"
-
+alias dev4="ssh -XA 192.168.168.223"
+alias tmux-kill="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}"
 alias make_ipython = "python build/x86_64/bin/ipython"
-
