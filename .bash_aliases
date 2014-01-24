@@ -20,3 +20,6 @@ alias sscloud="ssh -XA training.bloom.datacratic.com"
 alias cloudfs="sshfs training.bloom.datacratic.com:/home/max ~/cloudmount"
 
 alias micfs="sshfs machink7@machineintelligencecup.com: temp"
+
+alias make_ipython = "python build/x86_64/bin/ipython"
+
