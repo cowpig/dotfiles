@@ -4,7 +4,7 @@ rm ~/.bash_aliases
 rm ~/.tmux.conf
 rm ~/.profile
 rm ~/.vimrc
-rm ~/.vim
+rm -rf ~/.vim
 ln -s ~/dotfiles/.gitconfig
 ln -s ~/dotfiles/.bashrc
 ln -s ~/dotfiles/.bash_aliases
