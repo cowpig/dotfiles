@@ -37,11 +37,17 @@ if [ -f .bash_custom ] ; then
     source .bash_custom
 fi
 
-# Add local directory for libraries, etc
-mkdir -p $HOME/local/bin
-PATH="$HOME/local/bin:$PATH"
- 
-mkdir -p $HOME/local/lib
-export LD_LIBRARY_PATH="$HOME/local/lib:$LD_LIBRARY_PATH"
- 
 export PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig/:$HOME/local/lib/pkg-config/"
+
+# adding CUDA
+if [ -d "/usr/local/cuda-5.5/bin" ] ; then
+	export PATH="/usr/local/cuda-5.5/bin:$PATH"
+fi
+if [ -d "/usr/local/cuda-5.5/lib64" ] ; then
+	export LD_LIBRARY_PATH="/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH"
+fi 
+
+# anaconda
+if [ -d "/home/max/anaconda/lib" ] ; then
+	export LD_LIBRARY_PATH="/home/max/anaconda/lib:$LD_LIBRARY_PATH"
+fi
