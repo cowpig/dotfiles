@@ -11,7 +11,10 @@
 #PATH stuff
 PATH=/home/max/anaconda/bin:$PATH
 PATH=$PATH:/home/max/bin
-PATH=$PATH:~/SublimeText2
+PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
+
+export EDITOR="subl -w -n"
+
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -119,6 +122,3 @@ fi
 LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
 
-
-# added by Anaconda 1.8.0 installer
-export PATH="/home/max/anaconda/bin:$PATH"
