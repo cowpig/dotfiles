@@ -4,10 +4,13 @@ alias jc="javac -d classes *.java"
 alias jr="java -cp classes"
 alias tmux-kill="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}"
 alias make_ipython="PYTHONPATH=build/x86_64/bin ~/anaconda/bin/ipython"
-tunnelfunc(){
-	ssh $1 -L 5000:127.0.0.1:8888
+function tunnel(){
+	ssh $1 -L 5000:127.0.0.1:8888;
 }
-alias tunnel=tunnelfunc
+function psgrep() { 
+	ps axuf | grep -v grep | grep "$@" -i --color=auto; 
+}
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -22,7 +25,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -lashF'
 alias la='ls -A'
 alias l='ls -CF'
 
