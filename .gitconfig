@@ -16,3 +16,5 @@
 	pull = pull --rebase
 [grep]
 	lineNumber = true
+[push]
+	default = matching
