@@ -13,6 +13,16 @@ PATH=/home/max/anaconda/bin:$PATH
 PATH=$PATH:/home/max/bin
 PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
 
+PATH=$PATH:/usr/local/cuda/bin
+
+
+# aggregate all history to the same .history file
+shopt -s histappend
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+export HISTCONTROL=ignoredups:erasedups
+export PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
+
 export EDITOR="subl -w -n"
 
 
