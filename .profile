@@ -6,7 +6,7 @@
 
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
-#umask 022
+# umask 022
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -30,6 +30,7 @@ if [ -d "$HOME/local/lib" ] ; then
     export LD_LIBRARY_PATH
 fi
 
+#############
  
 export PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig/:$HOME/local/lib/pkg-config/"
 # customizations
@@ -37,17 +38,15 @@ if [ -f .bash_custom ] ; then
     source .bash_custom
 fi
 
-export PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig/:$HOME/local/lib/pkg-config/"
-
 # adding CUDA
-if [ -d "/usr/local/cuda-5.5/bin" ] ; then
-	export PATH="/usr/local/cuda-5.5/bin:$PATH"
+if [ -d "/usr/local/cuda-6.5/bin" ] ; then
+	export PATH="/usr/local/cuda-6.5/bin:$PATH"
 fi
-if [ -d "/usr/local/cuda-5.5/lib64" ] ; then
-	export LD_LIBRARY_PATH="/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH"
+if [ -d "/usr/local/cuda-6.5/lib64" ] ; then
+	export LD_LIBRARY_PATH="/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH"
 fi 
 
 # anaconda
-if [ -d "$HOME/anaconda/lib" ] ; then
-	export LD_LIBRARY_PATH="$HOME/anaconda/lib:$LD_LIBRARY_PATH"
-fi
+#if [ -d "$HOME/anaconda/lib" ] ; then
+#	export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/anaconda/lib"
+# fi
