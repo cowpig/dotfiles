@@ -48,6 +48,6 @@ if [ -d "/usr/local/cuda-5.5/lib64" ] ; then
 fi 
 
 # anaconda
-if [ -d "/home/max/anaconda/lib" ] ; then
-	export LD_LIBRARY_PATH="/home/max/anaconda/lib:$LD_LIBRARY_PATH"
+if [ -d "$HOME/anaconda/lib" ] ; then
+	export LD_LIBRARY_PATH="$HOME/anaconda/lib:$LD_LIBRARY_PATH"
 fi

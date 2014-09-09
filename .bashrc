@@ -2,8 +2,8 @@
 [ -z "$PS1" ] && return
 
 #PATH stuff
-PATH=/home/max/anaconda/bin:$PATH
-PATH=$PATH:/home/max/bin
+PATH=$HOME/anaconda/bin:$PATH
+PATH=$PATH:$HOME/bin
 PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
 
 PATH=$PATH:/usr/local/cuda/bin
