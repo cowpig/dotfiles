@@ -15,6 +15,7 @@ export HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
 export HISTCONTROL=ignoreboth
 export PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
+export PYLEARN2_DATA_PATH=$HOME/pylearn2/data
 
 # editor is sublime
 export EDITOR="subl -w -n"
@@ -94,4 +95,4 @@ LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
 
 # install Z: https://github.com/rupa/z
-. z.sh
+. $HOME/z.sh
