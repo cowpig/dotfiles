@@ -10,6 +10,9 @@ function tunnel(){
 function psgrep() { 
 	ps axuf | grep -v grep | grep "$@" -i --color=auto; 
 }
+function ntimes { 
+	seq 1 $1| { shift; xargs -i -- "$@"; } 
+}
 
 
 # enable color support of ls and also add handy aliases
