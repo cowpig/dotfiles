@@ -4,6 +4,7 @@ alias jc="javac -d classes *.java"
 alias jr="java -cp classes"
 alias tmux-kill="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}"
 alias make_ipython="PYTHONPATH=build/x86_64/bin ~/anaconda/bin/ipython"
+alias sshx="ssh -XA"
 function tunnel(){
 	ssh $1 -L 5000:127.0.0.1:8888;
 }
@@ -35,3 +36,5 @@ alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+alias suren="ssh -XA max@ec2-54-164-145-224.compute-1.amazonaws.com"
