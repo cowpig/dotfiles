@@ -38,3 +38,6 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 alias suren="ssh -XA max@ec2-54-164-145-224.compute-1.amazonaws.com"
+alias gpubox="ssh -i ~/creds/maxkey.pem -XA ubuntu@ec2-54-69-78-236.us-west-2.compute.amazonaws.com"
+
+alias vpn_start="/etc/init.d/openvpn start"
