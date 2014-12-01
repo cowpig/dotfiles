@@ -41,5 +41,6 @@ alias suren="ssh -XA max@ec2-54-164-145-224.compute-1.amazonaws.com"
 alias gpubox="ssh -i ~/creds/maxkey.pem -XA ubuntu@ec2-54-69-78-236.us-west-2.compute.amazonaws.com"
 alias sshavz="ssh -XA mmccrea@10.0.6.55"
 alias fsavz="sshfs mmccrea@10.0.6.55: ~/temp"
+alias tunavz="ssh -N -f -L localhost:6000:localhost:7000 mmccrea@10.0.6.55"
 
 alias vpn_start="sudo /etc/init.d/openvpn start"
