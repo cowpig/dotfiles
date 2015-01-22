@@ -6,7 +6,7 @@ alias tmux-kill="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}"
 alias make_ipython="PYTHONPATH=build/x86_64/bin ~/anaconda/bin/ipython"
 alias sshx="ssh -XA"
 function tunnel(){
-	ssh $1 -L 5000:127.0.0.1:8888;
+	ssh $1 -N -L 5000:127.0.0.1:8888;
 }
 function psgrep() { 
 	ps axuf | grep -v grep | grep "$@" -i --color=auto; 
@@ -41,6 +41,10 @@ alias suren="ssh -XA max@ec2-54-164-145-224.compute-1.amazonaws.com"
 alias gpubox="ssh -i ~/creds/maxkey.pem -XA ubuntu@ec2-54-69-78-236.us-west-2.compute.amazonaws.com"
 alias sshavz="ssh -XA mmccrea@10.0.6.55"
 alias fsavz="sshfs mmccrea@10.0.6.55: ~/temp"
+
+alias sshmig="ssh -XA mmccrea@10.0.6.205"
+
+# http://wisdomthroughknowledge.blogspot.com/2012/07/accessing-ipython-notebook-remotely.html
 alias tunavz="ssh -N -f -L localhost:6000:localhost:7000 mmccrea@10.0.6.55"
 
 alias vpn_start="sudo /etc/init.d/openvpn start"
