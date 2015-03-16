@@ -96,3 +96,6 @@ export LS_COLORS
 
 # install Z: https://github.com/rupa/z
 . $HOME/z.sh
+
+# source nvm
+source ~/.nvm/nvm.sh
