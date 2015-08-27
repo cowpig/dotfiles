@@ -46,3 +46,4 @@ alias sshmig="ssh -XA mmccrea@10.0.6.205"
 # http://wisdomthroughknowledge.blogspot.com/2012/07/accessing-ipython-notebook-remotely.html
 alias tunavz="ssh -N -f -L localhost:6000:localhost:7000 mmccrea@awse-mmccrea02"
 alias vpnavz="sudo /etc/init.d/openvpn restart"
+alias sshnb="ssh -N -f -L localhost:8888:localhost:8889 mmccrea@awse-mmccrea02"
