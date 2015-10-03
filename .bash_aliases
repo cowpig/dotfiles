@@ -47,3 +47,6 @@ alias sshmig="ssh -XA mmccrea@10.0.6.205"
 alias tunavz="ssh -N -f -L localhost:6000:localhost:7000 mmccrea@awse-mmccrea02"
 alias vpnavz="sudo /etc/init.d/openvpn restart"
 alias sshnb="ssh -N -f -L localhost:8888:localhost:8889 mmccrea@awse-mmccrea02"
+
+alias sshgc="ssh -XA mcaoxol@104.197.80.218"
+alias fsgc="sshfs mcaoxol@104.197.80.218 ~/temp"
