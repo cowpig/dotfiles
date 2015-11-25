@@ -2,7 +2,7 @@
 [ -z "$PS1" ] && return
 
 #PATH stuff
-PATH=$HOME/anaconda/bin:$PATH
+PATH=$HOME/anaconda2/bin:$PATH
 PATH=$PATH:$HOME/bin
 PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
 
