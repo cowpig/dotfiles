@@ -98,4 +98,4 @@ export LS_COLORS
 . $HOME/z.sh
 
 # source nvm
-source ~/.nvm/nvm.sh
+# source ~/.nvm/nvm.sh
