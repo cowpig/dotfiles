@@ -1,0 +1,22 @@
+[global_config]
+[keybindings]
+  zoom_out = <Primary>KP_Subtract
+  zoom_in = <Primary>KP_Add
+[profiles]
+  [[default]]
+    use_system_font = False
+    background_image = None
+    foreground_color = "#839496"
+    font = Monospace 14
+    background_color = "#002b36"
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

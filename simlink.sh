@@ -12,3 +12,6 @@ ln -s ~/dotfiles/.profile
 ln -s ~/dotfiles/.gdbinit
 ln -s ~/dotfiles/.theanorc
 ln -s ~/dotfiles/z/z.sh
+mkdir ~/.config/terminator
+rm ~/.config/terminator/config
+ln -s ~/dotfiles/config/terminator ~/.config/terminator/config
