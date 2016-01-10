@@ -8,6 +8,9 @@ PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
 
 PATH=$PATH:/usr/local/cuda/bin
 
+# for some reason curl is looking in the wrong place for cert
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
 # aggregate all history to the same .history file
 shopt -s histappend
 export HISTSIZE=100000
@@ -83,6 +86,9 @@ esac
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+if [-f ~/.rvm/scripts/rvm]; then
+    source ~/.rvm/scripts/rvm
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -99,3 +105,5 @@ export LS_COLORS
 
 # source nvm
 # source ~/.nvm/nvm.sh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
