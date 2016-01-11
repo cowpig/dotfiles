@@ -86,7 +86,7 @@ esac
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-if [-f ~/.rvm/scripts/rvm]; then
+if [ -f ~/.rvm/scripts/rvm ]; then
     source ~/.rvm/scripts/rvm
 fi
 
