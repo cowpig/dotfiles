@@ -4,21 +4,23 @@ git -C dotfiles submodule update --init
 sh ~/dotfiles/simlink.sh
 source ~/.bashrc
 
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo add-apt-repository ppa:webupd8team/sublime-text-3 
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo apt-get update
-sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser
+sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm skype kazam sublime-text-installer
 
 # make vlc default music/video player
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/defaults.list
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/mimeinfo.cache
 sudo sed -i 's/totem/vlc/g' /usr/share/applications/defaults.list
 sudo sed -i 's/totem/vlc/g' /usr/share/applications/mimeinfo.cache
+sudo apt-get purge rhythmbox
 
 # make terminator default terminal program
 gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
 
-# enable 9 workspaces
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 3
+# enable 6 workspaces
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 2
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 3
 
 # remove ubuntu's spam

@@ -2,11 +2,11 @@
 [ -z "$PS1" ] && return
 
 #PATH stuff
-PATH=$HOME/anaconda2/bin:$PATH
-PATH=$PATH:$HOME/bin
-PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
-
-PATH=$PATH:/usr/local/cuda/bin
+export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:/opt/Qt/5.2.1/gcc_64/bin
+export PATH=$PATH:/usr/local/cuda/bin
+export PATH=$PATH:./node_modules/.bin
 
 # for some reason curl is looking in the wrong place for cert
 export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
@@ -106,4 +106,4 @@ export LS_COLORS
 # source nvm
 # source ~/.nvm/nvm.sh
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

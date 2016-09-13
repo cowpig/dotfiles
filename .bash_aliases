@@ -50,3 +50,6 @@ alias sshnb="ssh -N -f -L localhost:8888:localhost:8889 mmccrea@awse-mmccrea02"
 
 alias sshgc="ssh -XA mcaoxol@jackalcackle.com"
 alias fsgc="sshfs mcaoxol@jackalcackle.com ~/temp"
+
+alias sshmax="ssh -XA ubuntu@52.200.188.234"
+alias sshbig="ssh -XA ec2-user@54.205.161.115"
