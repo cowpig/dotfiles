@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Monokai.tmTheme",
 	"enable_tab_scrolling": false,
-	"font_size": 14,
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"Vintage"

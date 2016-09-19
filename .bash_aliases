@@ -1,9 +1,6 @@
-alias verk="cd ~/verk/"
-alias sub="sublime_text"
-alias jc="javac -d classes *.java"
-alias jr="java -cp classes"
-alias tmux-kill="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}"
 alias make_ipython="PYTHONPATH=build/x86_64/bin ~/anaconda/bin/ipython"
+
+alias tmux-kill="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}"
 alias sshx="ssh -XA"
 function tunnel(){
 	ssh $1 -N -L 5000:127.0.0.1:8888;
@@ -35,18 +32,6 @@ alias l='ls -CFa'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-alias suren="ssh -XA max@ec2-54-164-145-224.compute-1.amazonaws.com"
-alias gpubox="ssh -i ~/creds/maxkey.pem -XA ubuntu@ec2-54-69-78-236.us-west-2.compute.amazonaws.com"
-
-# avaaz-related stuff
-alias sshavz="ssh -XA mmccrea@awse-mmccrea02"
-alias fsavz="sshfs mmccrea@awse-mmccrea02: ~/temp"
-alias sshmig="ssh -XA mmccrea@10.0.6.205"
-# http://wisdomthroughknowledge.blogspot.com/2012/07/accessing-ipython-notebook-remotely.html
-alias tunavz="ssh -N -f -L localhost:6000:localhost:7000 mmccrea@awse-mmccrea02"
-alias vpnavz="sudo /etc/init.d/openvpn restart"
-alias sshnb="ssh -N -f -L localhost:8888:localhost:8889 mmccrea@awse-mmccrea02"
 
 alias sshgc="ssh -XA mcaoxol@jackalcackle.com"
 alias fsgc="sshfs mcaoxol@jackalcackle.com ~/temp"
