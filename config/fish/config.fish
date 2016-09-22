@@ -1,7 +1,11 @@
 set -x fish_greeting ""
 
-# PATHs
+# disable caps lock
+# command 'setxkbmap -option caps:none'
+# to re-enable:
+# setxkbmap -option
 
+# PATHs
 set PATH $PATH ./node_modules/.bin
 if test -e /usr/local/bin
 	set PATH $PATH /usr/local/bin
@@ -30,8 +34,13 @@ function fish_prompt
     set_color normal; echo -n '@'
     set_color $fish_color_host; echo -n (hostname)
     set_color normal; echo -n ':'
-    set_color $fish_color_cwd; echo -n $PWD
+    set_color $fish_color_cwd; echo -n (pwd | sed "s,^$HOME,~,")
     set_color normal; echo -n '$ '
+end
+
+# custom keybindings
+function fish_user_key_bindings
+	bind -k 'caps' accept-autosuggestion
 end
 
 function !! --description "Run the last command"
@@ -56,9 +65,13 @@ function psgrep
 end
 
 function ll
-	command ls -lashF
+	command ls -lashF $argv
 end
 
 function l
-	command ls -CFa
+	command ls -CFa $argv
+end
+
+function mp
+	command ./manage.py $argv
 end
