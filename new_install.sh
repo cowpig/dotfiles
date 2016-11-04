@@ -29,5 +29,12 @@ gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-ama
 gsettings set com.canonical.Unity.Lenses remote-content-search none
 sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 
+# there's nothing natural about your inverted scroll, apple
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+
 wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh
 bash Anaconda2-2.5.0-Linux-x86_64.sh -b
+
+chsh -s `which fish`
+
