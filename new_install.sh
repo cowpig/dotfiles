@@ -8,7 +8,7 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
-sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm skype kazam sublime-text-installer tmux fish
+sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm skype kazam sublime-text-installer tmux fish gparted
 
 # make vlc default music/video player
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/defaults.list
