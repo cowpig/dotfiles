@@ -15,7 +15,7 @@ sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/defaults.list
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/mimeinfo.cache
 sudo sed -i 's/totem/vlc/g' /usr/share/applications/defaults.list
 sudo sed -i 's/totem/vlc/g' /usr/share/applications/mimeinfo.cache
-sudo apt-get purge rhythmbox
+sudo apt-get purge rhythmbox totem
 
 # make terminator default terminal program
 gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
@@ -33,8 +33,8 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
 
-wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh
-bash Anaconda2-2.5.0-Linux-x86_64.sh -b
+wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+bash Anaconda3-4.2.0-Linux-x86_64.sh -b
 
 chsh -s `which fish`
 
