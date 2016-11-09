@@ -14,13 +14,15 @@ ln -s ~/dotfiles/.profile ~/.profile
 ln -s ~/dotfiles/.gdbinit ~/.gdbinit
 ln -s ~/dotfiles/.theanorc ~/.theanorc
 
-mkdir ~/.config/terminator
-rm ~/.config/terminator/config
-ln -s ~/dotfiles/config/terminator ~/.config/terminator/config
+rm -r ~/.config/terminator/config
+ln -s ~/dotfiles/config/terminator ~/.config/terminator
 
-mkdir ~/.config/sublime-text-3/Packages/User/
-rm ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-ln -s ~/dotfiles/config/sublime ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+rm -r ~/.config/sublime-text-3
+ln -s ~/dotfiles/config/sublime-text-3 ~/.config/sublime-text-3
 
 rm -r ~/.config/fish
 ln -s ~/dotfiles/config/fish ~/.config/fish
+
+rm -r ~/.mozilla
+ln -s ~/dotfiles/config/.mozilla ~/.mozilla
+
