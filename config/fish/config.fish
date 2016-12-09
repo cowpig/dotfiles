@@ -20,6 +20,10 @@ if test -e $HOME/anaconda3/bin
 	set PATH $HOME/anaconda3/bin $PATH
 end
 
+for file in ~/.config/fish/sourceme/*.fish
+	source $file
+end
+
 # editor is sublime
 set EDITOR "subl -w -n"
 
