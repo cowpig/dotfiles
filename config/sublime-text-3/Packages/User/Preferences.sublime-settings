@@ -1,10 +1,10 @@
 {
 	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Monokai.tmTheme",
-	"font_size": 16,
+	"enable_tab_scrolling": false,
+	"font_size": 18,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme_sidebar_font_lg": true,
-	"enable_tab_scrolling": false,
+	"theme_sidebar_font_lg": true
 }
