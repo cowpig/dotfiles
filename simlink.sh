@@ -24,7 +24,3 @@ ln -s ~/dotfiles/config/sublime-text-3 ~/.config/sublime-text-3
 
 rm -r ~/.config/fish
 ln -s ~/dotfiles/config/fish ~/.config/fish
-
-rm -r ~/.mozilla
-ln -s ~/dotfiles/config/.mozilla ~/.mozilla
-
