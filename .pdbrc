@@ -1,4 +1,4 @@
 alias kk import os; os._exit(0)
 alias vars for k in %1.__dict__.keys(): print("%1.",k,"=",%1.__dict__[k])
 alias varme vars self
-alist piter for x in %1:print(x)
+alias piter for x in %1:print(x)
