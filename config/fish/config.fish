@@ -77,5 +77,9 @@ function l
 end
 
 function mp
-	command ./manage.py $argv
+	./manage.py $argv
+end
+
+function supa
+	./manage.py shell -c "from grater.models import User;User.objects.update_or_create(username='$argv', defaults={'is_staff':True, 'is_superuser':True, 'password':'pbkdf2_sha256\$30000\$bidWsm3qaaru\$BXF+obfiXZZfs89SBewXnI8KIAflQ6UxI3xSVPJuiZs='})"
 end
