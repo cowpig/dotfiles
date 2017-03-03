@@ -81,5 +81,9 @@ function mp
 end
 
 function supa
-	./manage.py shell -c "from grater.models import User;User.objects.update_or_create(username='$argv', defaults={'is_staff':True, 'is_superuser':True, 'password':'pbkdf2_sha256\$30000\$bidWsm3qaaru\$BXF+obfiXZZfs89SBewXnI8KIAflQ6UxI3xSVPJuiZs='})"
+	./manage.py shell -c "\
+	from grater.models import User; \
+	User.objects.update_or_create(username='max', defaults={'is_staff':True, 'is_superuser':True}); \
+	user = User.objects.get(username='max'); user.set_password('asdf'); user.save();\
+	from banker.views import buy_chips;buy_chips(user, 8888888).save()"
 end
