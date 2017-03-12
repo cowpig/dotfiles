@@ -19,6 +19,9 @@ end
 if test -e $HOME/anaconda3/bin
 	set PATH $HOME/anaconda3/bin $PATH
 end
+if test -e $HOME/.cargo/bin
+	set PATH $PATH $HOME/.cargo/bin
+end
 
 for file in ~/.config/fish/sourceme/*.fish
 	source $file
