@@ -21,7 +21,7 @@ sudo apt-get purge rhythmbox totem
 gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
 
 # enable 6 workspaces
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 2
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 3
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 3
 
 # remove ubuntu's spam
