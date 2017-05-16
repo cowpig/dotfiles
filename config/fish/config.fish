@@ -1,9 +1,6 @@
 set -x fish_greeting ""
 
-# disable caps lock
-# command 'setxkbmap -option caps:none'
-# to re-enable:
-# setxkbmap -option
+~/dotfiles/xmodmap.sh
 
 # PATHs
 set PATH $PATH ./node_modules/.bin
