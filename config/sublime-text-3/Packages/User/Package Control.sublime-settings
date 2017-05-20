@@ -8,8 +8,10 @@
 		"Babel",
 		"Boxy Theme",
 		"Elm Language Support",
+		"Ethereum",
 		"fish-shell",
 		"MoveTab",
-		"Package Control"
+		"Package Control",
+		"RustAutoComplete"
 	]
 }

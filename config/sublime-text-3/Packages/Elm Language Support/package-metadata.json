@@ -1,1 +1,1 @@
-{"platforms": ["*"], "sublime_text": "*", "description": "Elm language syntax highlighting and tool integration for ST2/3", "dependencies": [], "url": "https://packagecontrol.io/packages/Elm%20Language%20Support", "version": "0.17.1"}
+{"description": "Elm language syntax highlighting and tool integration for ST2/3.", "sublime_text": "*", "platforms": ["*"], "url": "https://packagecontrol.io/packages/Elm%20Language%20Support", "version": "0.18.0", "dependencies": []}
