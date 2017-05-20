@@ -87,3 +87,8 @@ function supa
 	user = User.objects.get(username='max'); user.set_password('asdf'); user.save();\
 	from banker.views import buy_chips;buy_chips(user, 8888888).save()"
 end
+
+function socks
+	command "ssh -p44 -N -n -g -D 1080"
+	# in browser settings, enable SOCKS proxy @ localhost:1080
+end
