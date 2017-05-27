@@ -20,7 +20,7 @@ sudo apt-get purge rhythmbox totem
 # make terminator default terminal program
 gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
 
-# enable 6 workspaces
+# enable 9 workspaces
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 3
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 3
 
