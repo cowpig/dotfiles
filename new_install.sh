@@ -8,7 +8,7 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
-sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm skype kazam sublime-text-installer tmux fish gparted postgresql nodejs npm
+sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm skype kazam git sublime-text-installer tmux fish gparted postgresql nodejs npm
 
 # make vlc default music/video player
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/defaults.list
@@ -33,8 +33,8 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
 
-wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
-bash Anaconda3-4.2.0-Linux-x86_64.sh -b
+wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
+bash Anaconda3-4.4.0-Linux-x86_64.sh -b
 
 chsh -s `which fish`
 
