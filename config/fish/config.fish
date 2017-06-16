@@ -19,6 +19,9 @@ end
 if test -e $HOME/.cargo/bin
 	set PATH $PATH $HOME/.cargo/bin
 end
+if test -e $HOME/.npm_global/bin
+	set PATH $PATH $HOME/.npm_global/bin
+end
 
 for file in ~/.config/fish/sourceme/*.fish
 	source $file
