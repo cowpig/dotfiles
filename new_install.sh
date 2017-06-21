@@ -41,4 +41,6 @@ curl https://sh.rustup.rs -sSf | sh
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 
+sudo apt autoremove
+
 chsh -s `which fish`
