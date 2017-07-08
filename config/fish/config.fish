@@ -83,6 +83,8 @@ function mp
 	./manage.py $argv
 end
 
+# TODO: add a forcekillall function that does kill -9
+
 function supa
 	./manage.py shell -c "\
 	from grater.models import User; \
@@ -94,4 +96,10 @@ end
 function socks
 	command "ssh -p44 -N -n -g -D 1080"
 	# in browser settings, enable SOCKS proxy @ localhost:1080
+end
+
+function loop --description "loop <count> <command>"
+	for i in (seq 1 $argv[1])
+		eval $argv[2..-1]
+	end
 end
