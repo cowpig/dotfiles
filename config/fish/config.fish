@@ -4,6 +4,13 @@ set -x fish_greeting ""
 
 # PATHs
 set PATH $PATH ./node_modules/.bin
+
+# prepend
+if test -e $HOME/anaconda3/bin
+	set PATH $HOME/anaconda3/bin $PATH
+end
+
+# append
 if test -e /usr/local/bin
 	set PATH $PATH /usr/local/bin
 end
@@ -12,9 +19,6 @@ if test -e $HOME/bin
 end
 if test -e /usr/local/cuda/bin
 	set PATH $PATH /usr/local/cuda/bin
-end
-if test -e $HOME/anaconda3/bin
-	set PATH $HOME/anaconda3/bin $PATH
 end
 if test -e $HOME/.cargo/bin
 	set PATH $PATH $HOME/.cargo/bin
@@ -68,7 +72,7 @@ function tunl
 end
 
 function psgrep
-	command ps axuf | grep -v grep | grep $argv -i --color=auto; 
+	command ps axuf | grep -v grep | grep $argv -i --color=auto;
 end
 
 function ll
@@ -102,4 +106,8 @@ function loop --description "loop <count> <command>"
 	for i in (seq 1 $argv[1])
 		eval $argv[2..-1]
 	end
+end
+
+function rsyncp --description "rsync -ravzP [port_number] [source] [destination]"
+	eval "rsync -ravzP -e \"ssh -p $argv[1]\" $argv[2] $argv[3]"
 end
