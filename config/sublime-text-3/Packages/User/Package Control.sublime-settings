@@ -7,9 +7,10 @@
 	[
 		"Babel",
 		"Boxy Theme",
-		"Elm Language Support",
 		"Ethereum",
 		"fish-shell",
+		"MagicPython",
+		"MarkdownEditing",
 		"MoveTab",
 		"Package Control",
 		"RustAutoComplete"

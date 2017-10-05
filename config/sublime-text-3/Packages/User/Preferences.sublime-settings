@@ -1,10 +1,16 @@
 {
-	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
 	"enable_tab_scrolling": false,
-	"font_size": 17,
+	"font_size": 11,
 	"ignored_packages":
 	[
+		"Python",
 		"Vintage"
 	],
-	"theme_sidebar_font_lg": true
+	"rulers":
+	[
+		80
+	],
+	"theme_sidebar_font_lg": true,
+	"trim_trailing_white_space_on_save": true
 }
