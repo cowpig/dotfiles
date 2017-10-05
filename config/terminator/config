@@ -15,8 +15,20 @@
 [profiles]
   [[default]]
     background_color = "#002b36"
-    background_image = None
+    cursor_color = "#839496"
     font = Monospace 14
     foreground_color = "#839496"
     scrollback_infinite = True
     use_system_font = False
+  [[ambience]]
+    background_color = "#300a24"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+  [[gruvbox light]]
+    background_color = "#fbf1c7"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#3c3836"
+  [[solarized light]]
+    background_color = "#fdf6e3"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#657b83"
