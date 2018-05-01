@@ -19,10 +19,6 @@ sudo apt-get purge rhythmbox totem
 # make terminator default terminal program
 gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
 
-# enable 9 workspaces
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 3
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 3
-
 # remove ubuntu's spam
 gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
 gsettings set com.canonical.Unity.Lenses remote-content-search none
@@ -32,8 +28,8 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
 
-wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
-bash Anaconda3-4.4.0-Linux-x86_64.sh -b
+wget https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+bash Anaconda3-5.1.0-Linux-x86_64.sh -b
 curl https://sh.rustup.rs -sSf | sh
 
 # this is so npm global modules don't need sudo
