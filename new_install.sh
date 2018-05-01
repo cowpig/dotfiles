@@ -1,14 +1,13 @@
 #!/bin/sh
-# assumes dotfiles has been cloned
-git -C dotfiles submodule update --init
 sh ~/dotfiles/simlink.sh
 source ~/.bashrc
 
-sudo add-apt-repository ppa:webupd8team/sublime-text-3 
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo apt-get install apt-transport-https
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
-sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm skype kazam git sublime-text-installer tmux fish gparted postgresql nodejs npm
+sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm kazam git sublime-text tmux fish gparted postgresql nodejs npm
 
 # make vlc default music/video player
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/defaults.list
