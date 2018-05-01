@@ -1,18 +1,3 @@
 {
-	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
-		"Babel",
-		"Boxy Theme",
-		"Ethereum",
-		"fish-shell",
-		"MagicPython",
-		"MarkdownEditing",
-		"MoveTab",
-		"Package Control",
-		"RustAutoComplete"
-	]
+	"bootstrapped": true
 }
