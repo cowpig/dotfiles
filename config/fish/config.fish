@@ -111,3 +111,8 @@ end
 function rsyncp --description "rsync -ravzP [port_number] [source] [destination]"
 	eval "rsync -ravzP -e \"ssh -p $argv[1]\" $argv[2] $argv[3]"
 end
+
+function wrk --description "cd into directory & activate venv"
+	cd $argv[1]
+	source ../venv/bin/activate.fish
+end
