@@ -4,13 +4,12 @@
 [core]
 	editor = nano
 [color]
-        ui = auto
+		ui = auto
 [alias]
-	a = add	
-	d = diff
-        st = status
-        submast = submodule foreach "git fetch && git checkout master && git pull origin master"
-        cm = commit -m
+	psh = push -u origin
+	st = status
+	submast = submodule foreach "git fetch && git checkout master && git pull origin master"
+	cm = commit -m
 	log = log --stat
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	pr = pull --rebase
