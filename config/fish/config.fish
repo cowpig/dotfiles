@@ -116,3 +116,11 @@ function wrk --description "cd into directory & activate venv"
 	cd $argv[1]
 	source ../venv/bin/activate.fish
 end
+
+function current_branch
+	eval "git rev-parse --abbrev-ref HEAD"
+end
+
+function push --description 'git push -u origin [current_branch]'
+	eval "git push -u origin " (eval current_branch)
+end
