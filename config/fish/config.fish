@@ -26,6 +26,9 @@ end
 if test -e $HOME/.npm-global/bin
 	set PATH $PATH $HOME/.npm-global/bin
 end
+if test -e $HOME/.yarn/bin
+	set PATH $PATH $HOME/.yarn/bin
+end
 
 for file in ~/.config/fish/sourceme/*.fish
 	source $file
