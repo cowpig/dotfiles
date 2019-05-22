@@ -1,8 +1,7 @@
 set -x fish_greeting ""
 
-~/dotfiles/xmodmap.sh
-
 # PATHs
+# set PATH $PATH /home/max/gits/blitzka/grater-django/js/node_modules/.bin
 set PATH $PATH ./node_modules/.bin
 
 # prepend
