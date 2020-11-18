@@ -4,10 +4,10 @@ source ~/.bashrc
 
 sudo apt-get install apt-transport-https
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+echo "deb https://download.sublimetext.com/apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
-sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm kazam git sublime-text tmux fish gparted postgresql nodejs npm
+sudo apt-get install -y vlc htop iotop terminator compizconfig-settings-manager compiz-plugins-extra gimp chromium-browser nodejs npm kazam git sublime-text tmux fish gparted postgresql nodejs npm pavucontrol
 
 # make vlc default music/video player
 sudo sed -i 's/rhythmbox/vlc/g' /usr/share/applications/defaults.list
@@ -28,8 +28,6 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
 
-wget https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
-bash Anaconda3-5.1.0-Linux-x86_64.sh -b
 curl https://sh.rustup.rs -sSf | sh
 
 # this is so npm global modules don't need sudo
